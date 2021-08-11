@@ -54,7 +54,12 @@ responses:
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_examplepositivethought:
-  - text: Would you like an example of a positive thought?
+  - buttons:
+    - payload: affirm
+      title: Yes
+    - payload: deny
+      title: No
+    text: Would you like an example of a positive thought?
   utter_positivethoughtexample:
   - text: Although failure is disappointing, it is an opportunity for growth and learning
 actions:
