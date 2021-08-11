@@ -1,7 +1,5 @@
 version: "2.0"
-
 stories:
-
 - story: happy path
   steps:
   - intent: greet
@@ -11,7 +9,6 @@ stories:
   - intent: affirm
   - action: utter_whatsbeengood
   - intent: whatsbeengood
-
 - story: whatsbeengood
   steps:
   - intent: greet
@@ -28,8 +25,10 @@ stories:
   - intent: positiveinteraction
   - action: utter_positivethought
   - intent: positivethought
-
-
+  - intent: deny
+  - action: utter_examplepositivethought
+  - intent: affirm
+  - action: utter_positivethoughtexample
 - story: sad path 1
   steps:
   - intent: greet
@@ -39,7 +38,6 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
-
 - story: sad path 2
   steps:
   - intent: greet

@@ -1,5 +1,4 @@
 version: "2.0"
-
 nlu:
 - intent: greet
   examples: |
@@ -16,7 +15,6 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
 - intent: goodbye
   examples: |
     - good afternoon
@@ -30,7 +28,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -39,7 +36,6 @@ nlu:
     - of course
     - that sounds good
     - correct
-
 - intent: deny
   examples: |
     - no
@@ -49,7 +45,7 @@ nlu:
     - don't like that
     - no way
     - not really
-
+    - No
 - intent: mood_great
   examples: |
     - perfect
@@ -66,7 +62,6 @@ nlu:
     - so so perfect
     - so good
     - so perfect
-
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -83,25 +78,25 @@ nlu:
     - extremly sad
     - so saad
     - so sad
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-
 - intent: positiveaction
   examples: |
     - I booked a new class
-
+    - Got back to working on this
 - intent: positiveinteraction
   examples: |
     - I had a nice chat with Barbara
-
+    - The evening with Dennis, Tess, Jan, Colin and Cameron
 - intent: positivethought
   examples: |
     - I can't think of one at the moment
 - intent: whatsbeengood
   examples: |
     - I got free flowers in the Co-op
+    - my dahlia flowers are lovely
+    - My secure key for first direct arrived
