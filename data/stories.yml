@@ -8,6 +8,27 @@ stories:
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
+  - intent: affirm
+  - action: utter_whatsbeengood
+  - intent: whatsbeengood
+
+- story: whatsbeengood
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_whatsbeengood
+  - intent: whatsbeengood
+  - action: utter_anymorewhatsbeengood
+  - intent: whatsbeengood
+  - action: utter_anymorewhatsbeengood
+  - intent: deny
+  - action: utter_positiveaction
+  - intent: positiveaction
+  - action: utter_positiveinteraction
+  - intent: positiveinteraction
+  - action: utter_positivethought
+  - intent: positivethought
+
 
 - story: sad path 1
   steps:
