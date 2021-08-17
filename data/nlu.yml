@@ -87,15 +87,6 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-- intent: positiveaction
-  examples: |
-    - I booked a new class
-- intent: positiveinteraction
-  examples: |
-    - I had a nice chat with Barbara
-- intent: positivethought
-  examples: |
-    - I can't think of one at the moment
 - intent: whatsbeengood
   examples: |
     - I got free flowers in the Co-op
@@ -116,9 +107,6 @@ nlu:
     - Nice visit to Tom
     - lovely clear view
     - kiwi
-- intent: nomoregood
-  examples: |
-    - I can't think of anything else good
 - intent: givepainmgttips
   examples: |
     - give me pain management tips
