@@ -11,4 +11,20 @@ rules:
 - rule: Bendybot skills
   steps:
   - intent: bot_skills
-  - action: utter_allbotskills
+  - action: utter_botskills
+- rule: Give pain management tips anytime the user asks
+  steps:
+  - intent: givepainmgttips
+  - action: utter_painmgttips
+- rule: Give panic management tips any time the user asks for them
+  steps:
+  - intent: givepanicmgttips
+  - action: utter_panicmgttips
+- rule: Give concentration tips anytime the user asks for them
+  steps:
+  - intent: giveconcentrationtips
+  - action: utter_concentrationtips
+- rule: Give recharging tips anytime the user asks for them
+  steps:
+  - intent: giverechargingtips
+  - action: utter_rechargingtips

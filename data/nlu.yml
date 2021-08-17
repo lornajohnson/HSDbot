@@ -30,7 +30,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-    - No
 - intent: affirm
   examples: |
     - yes
@@ -82,7 +81,6 @@ nlu:
     - extremly sad
     - so saad
     - so sad
-    - annoyed
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -92,16 +90,9 @@ nlu:
 - intent: positiveaction
   examples: |
     - I booked a new class
-    - Got back to working on this
-    - I'm back working on this
-    - Been to see Tom
 - intent: positiveinteraction
   examples: |
     - I had a nice chat with Barbara
-    - The evening with Dennis, Tess, Jan, Colin and Cameron
-    - chat with Kate
-    - Talk with Kim
-    - Chat with Kate and Janet in the polycrub and walled garden
 - intent: positivethought
   examples: |
     - I can't think of one at the moment
@@ -115,16 +106,16 @@ nlu:
     - my dahlias are flowering
     - my dahlias
     - dahlias flowering
+    - chat with Kate
+    - Talk with Kim
     - Chiropractor
+    - Chat with Kate and Janet in the polycrub and walled garden
+    - I'm back working on this
     - My secure key arrived
+    - Been to see Tom
     - Nice visit to Tom
     - lovely clear view
-- intent: givepositivethoughtexample
-  examples: |
-    - I can't think of a positive thought.  Can you give me an example?
-- intent: requestpositiveactionexample
-  examples: |
-    - I can't think of anymore good stuff.
+    - kiwi
 - intent: nomoregood
   examples: |
     - I can't think of anything else good
@@ -134,12 +125,15 @@ nlu:
 - intent: givepanicmgttips
   examples: |
     - give me panic management tips
+    - /givepanicmgttips
 - intent: giveconcentrationtips
   examples: |
     - give me concentration tips
+    - /giveconcentrationtips
 - intent: giverechargingtips
   examples: |
     - give me ideas on how to recharge
 - intent: bot_skills
   examples: |
     - what can you do
+    - what else can you do

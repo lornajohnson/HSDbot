@@ -41,6 +41,8 @@ intents:
     use_entities: true
 - giverechargingtips:
     use_entities: true
+- bot_skills:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -48,11 +50,11 @@ responses:
   - text: So, what's been good?
   utter_anymorewhatsbeengood:
   - buttons:
-    - payload: /whatsbeengood
-      title: Yes
-    - payload: /nomoregood
-      title: No
-    text: That's fab! Has anything else been good?
+    - payload: /botskills
+      title: What can you do?
+    - payload: /goodbye
+      title: Goodbye
+    text: That's fab! Would you like to see the list of what I can do or say goodbye?
   utter_positiveaction:
   - text: Can you think of any positive actions you have taken?
   utter_greet:
