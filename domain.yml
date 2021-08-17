@@ -27,13 +27,32 @@ intents:
     use_entities: true
 - positivethought:
     use_entities: true
+- givepositivethoughtexample:
+    use_entities: true
+- requestpositiveactionexample:
+    use_entities: true
+- nomoregood:
+    use_entities: true
+- givepainmgttips:
+    use_entities: true
+- givepanicmgttips:
+    use_entities: true
+- giveconcentrationtips:
+    use_entities: true
+- giverechargingtips:
+    use_entities: true
 entities: []
 slots: {}
 responses:
   utter_whatsbeengood:
   - text: So, what's been good?
   utter_anymorewhatsbeengood:
-  - text: That's fab! Has anything else good?
+  - buttons:
+    - payload: /whatsbeengood
+      title: Yes
+    - payload: /nomoregood
+      title: No
+    text: That's fab! Has anything else been good?
   utter_positiveaction:
   - text: Can you think of any positive actions you have taken?
   utter_greet:
@@ -55,15 +74,35 @@ responses:
   - text: I am a bot, powered by Rasa.
   utter_examplepositivethought:
   - buttons:
-    - payload: affirm
+    - payload: /utter_examplepositivethought
       title: Yes
-    - payload: deny
+    - payload: /utter_goodbye
       title: No
     text: Would you like an example of a positive thought?
   utter_positivethoughtexample:
   - text: Although failure is disappointing, it is an opportunity for growth and learning
+  utter_botskills:
+  - buttons:
+    - payload: /givepainmgttips
+      title: pain
+    - payload: /givepanicmgttips
+      title: panic
+    - payload: /giveconcentrationtips
+      title: concentration
+    - payload: /giverechargingtips
+      title: re-charging
+    text: I can show tips to help with
+  utter_painmgttips:
+  - text: 'Distraction: needlepoint while listening to something good; go for a walk and look for wild flowers or in the shallows on the beach.  Tens machine.'
+  utter_panicmgttips:
+  - text: Breathing exercises.  Killer Sudoku.  Walk outside and look at flowers.
+  utter_concentrationtips:
+  - text: Identify distractions and remove them including itchy, thirsty, too hot, too cold, email, facebook, unplug phone.
+  utter_rechargingtips:
+  - text: 'Kim relaxation from xx date:  personal boundary resurrection.   Deep muscle relaxation plus tropical island.'
 actions:
 - utter_examplepositivethought
 - utter_positivethoughtexample
+- anymorewhatsbeengood
 forms: {}
 e2e_actions: []

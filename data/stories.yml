@@ -4,11 +4,13 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-  - intent: affirm
   - action: utter_whatsbeengood
   - intent: whatsbeengood
+  - action: anymorewhatsbeengood
+  - intent: whatsbeengood
+  - action: anymorewhatsbeengood
+  - intent: nomoregood
+  - action: utter_goodbye
 - story: whatsbeengood
   steps:
   - intent: greet
@@ -33,17 +35,15 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
+  - action: utter_whatsbeengood
+  - intent: nomoregood
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
-- story: sad path 2
+- story: BendyBot skills
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: bot_skills
+  - action: utter_botskills
