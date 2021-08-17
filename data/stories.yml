@@ -13,7 +13,7 @@ stories:
   - action: utter_greet
   - action: utter_whatsbeengood
   - intent: whatsbeengood
-  - action: utter_anymorewhatsbeengood
+  - action: utter_afterwhatsbeengood
   
 - story: sad path 1
   steps:
