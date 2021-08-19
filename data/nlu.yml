@@ -17,6 +17,7 @@ nlu:
     - good afternoon
     - Hi
     - well hello
+    - hello]
 - intent: goodbye
   examples: |
     - good afternoon
@@ -107,6 +108,8 @@ nlu:
     - Nice visit to Tom
     - lovely clear view
     - kiwi
+    - more flowers on dahlias
+    - more visitors to the polycrub
 - intent: givepainmgttips
   examples: |
     - give me pain management tips
