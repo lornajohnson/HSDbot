@@ -139,3 +139,6 @@ nlu:
 - intent: positiveaction
   examples: |
     - Got back to working on this
+- intent: botskills
+  examples: |
+    - /botskills
