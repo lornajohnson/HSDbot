@@ -110,6 +110,11 @@ nlu:
     - kiwi
     - more flowers on dahlias
     - more visitors to the polycrub
+    - dahlias again
+    - 3 tons of soil has arrived
+    - the electrician has come to put power into the polycrub
+    - kiwi has grown an inch
+    - dahlias
 - intent: givepainmgttips
   examples: |
     - give me pain management tips
@@ -128,3 +133,9 @@ nlu:
   examples: |
     - what can you do
     - what else can you do
+- intent: positiveinteraction
+  examples: |
+    - The evening with Dennis, Tess, Jan, Colin and Cameron
+- intent: positiveaction
+  examples: |
+    - Got back to working on this

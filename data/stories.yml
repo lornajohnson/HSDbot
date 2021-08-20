@@ -6,15 +6,16 @@ stories:
   - action: utter_greet
   - action: utter_whatsbeengood
   - intent: whatsbeengood
-  - action: utter_goodbye
+  - action: utter_anymorewhatsbeengood
+  - intent: bot_skills
+  - action: utter_botskills
 - story: whatsbeengood
   steps:
   - intent: greet
   - action: utter_greet
   - action: utter_whatsbeengood
   - intent: whatsbeengood
-  - action: utter_afterwhatsbeengood
-  
+  - action: utter_anymorewhatsbeengood
 - story: sad path 1
   steps:
   - intent: greet

@@ -21,6 +21,18 @@ intents:
     use_entities: true
 - whatsbeengood:
     use_entities: true
+- positiveaction:
+    use_entities: true
+- positiveinteraction:
+    use_entities: true
+- positivethought:
+    use_entities: true
+- givepositivethoughtexample:
+    use_entities: true
+- requestpositiveactionexample:
+    use_entities: true
+- nomoregood:
+    use_entities: true
 - givepainmgttips:
     use_entities: true
 - givepanicmgttips:
@@ -36,17 +48,23 @@ slots: {}
 responses:
   utter_whatsbeengood:
   - text: So, what's been good?
-  utter_afterwhatsbeengood:
+  utter_anymorewhatsbeengood:
   - buttons:
     - payload: /botskills
       title: What can you do?
     - payload: /goodbye
       title: Goodbye
     text: That's fab! Would you like to see the list of what I can do or say goodbye?
+  utter_positiveaction:
+  - text: Can you think of any positive actions you have taken?
   utter_greet:
   - text: Hi! I'm BendyBot
+  utter_positiveinteraction:
+  - text: Can you think of any positive interaction you have had with anybody?
+  utter_positivethought:
+  - text: Can you think of a positive thought you have had?
   utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
+  - image: https://i.imgur.com/sdba27M.jpg
     text: 'Here is something to cheer you up:'
   utter_did_that_help:
   - text: Did that help you?
@@ -56,6 +74,15 @@ responses:
   - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+  utter_examplepositivethought:
+  - buttons:
+    - payload: /utter_examplepositivethought
+      title: Yes
+    - payload: /utter_goodbye
+      title: No
+    text: Would you like an example of a positive thought?
+  utter_positivethoughtexample:
+  - text: Although failure is disappointing, it is an opportunity for growth and learning
   utter_botskills:
   - buttons:
     - payload: /givepainmgttips
@@ -76,5 +103,8 @@ responses:
   utter_rechargingtips:
   - text: 'Kim relaxation from xx date:  personal boundary resurrection.   Deep muscle relaxation plus tropical island.'
 actions:
+- utter_examplepositivethought
+- utter_positivethoughtexample
+- anymorewhatsbeengood
 forms: {}
 e2e_actions: []
