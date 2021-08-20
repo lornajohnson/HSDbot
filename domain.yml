@@ -56,13 +56,13 @@ responses:
       title: Goodbye
     text: That's fab! Would you like to see the list of what I can do or say goodbye?
   utter_positiveaction:
-  - text: Can you think of any positive actions you have taken?
+  - text: I'm classing that as a positive action.  Is that right?
   utter_greet:
   - text: Hi! I'm BendyBot
   utter_positiveinteraction:
-  - text: Can you think of any positive interaction you have had with anybody?
+  - text: I'm classing that as a positive interaction.  Is that right?
   utter_positivethought:
-  - text: Can you think of a positive thought you have had?
+  - text: I'm classing that as a positive thought.  Is that right?
   utter_cheer_up:
   - image: https://i.imgur.com/sdba27M.jpg
     text: 'Here is something to cheer you up:'
@@ -82,7 +82,10 @@ responses:
       title: No
     text: Would you like an example of a positive thought?
   utter_positivethoughtexample:
-  - text: Although failure is disappointing, it is an opportunity for growth and learning
+  - text: I am not afraid to fail because I realize that noone can be successful all the time.
+  - text: Failure is an opportunity for growth and learning.
+  - text: I find the creative process exhilarating.
+  - text: My efforts give me feelings of satisfaction and a sense of accomplishment, even if I'm not always "the greatest".
   utter_botskills:
   - buttons:
     - payload: /givepainmgttips
